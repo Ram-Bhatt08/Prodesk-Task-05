@@ -1,0 +1,48 @@
+/* src/Components/Sidebar/Sidebar.css */
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #1f2937; /* dark gray */
+  padding: 1.5rem 1rem;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 0.75rem 1rem;
+  display: block;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #374151; /* hover dark gray */
+  color: #ffffff;
+}
+
+.sidebar nav ul li a.active {
+  background-color: #2563eb; /* blue for active link */
+  color: white;
+}

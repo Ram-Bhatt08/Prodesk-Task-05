@@ -1,0 +1,61 @@
+/* src/Components/Budgets/Budgets.css */
+
+.budgets-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.budgets-header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.budget-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.budget-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.budget-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.budget-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.budget-item {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.budget-item strong {
+  color: #2563eb;
+}
+

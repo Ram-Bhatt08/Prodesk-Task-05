@@ -1,0 +1,63 @@
+/* src/Components/Dashboard/Dashboard.css */
+
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dashboard-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1f2937; /* dark gray */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #374151; /* slate */
+}
+
+.card .value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card.total .value {
+  color: #2563eb; /* blue */
+}
+
+.card.used .value {
+  color: #dc2626; /* red */
+}
+
+.card.left .value {
+  color: #16a34a; /* green */
+}
+

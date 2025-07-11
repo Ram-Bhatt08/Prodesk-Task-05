@@ -1,0 +1,67 @@
+/* src/Components/Transactions/Transactions.css */
+
+.transactions-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.transactions-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.transaction-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.transaction-form button:hover {
+  background-color: #1e40af;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-item {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+}
+
+.transaction-item.debit {
+  border-left: 5px solid #dc2626; /* red */
+}
+
+.transaction-item.credit {
+  border-left: 5px solid #16a34a; /* green */
+}
+
